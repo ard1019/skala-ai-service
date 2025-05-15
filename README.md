@@ -59,40 +59,40 @@
 ## Directory Structure
 
 <pre>
-|-- data/              # 수집된 데이터 폴더
-|   |-- papers/        # 연구 논문 데이터
-|   |-- news/          # 기술 뉴스 데이터
-|   |-- patents/       # 특허 데이터
-|   |-- investments/   # 투자 동향 데이터
+|-- data/                     # 수집된 데이터 폴더
+|   |-- papers/               # 연구 논문 데이터
+|   |-- news/                 # 기술 뉴스 데이터
+|   |-- patents/              # 특허 데이터
+|   |-- investments/          # 투자 동향 데이터
 |
-|-- agents/            # 에이전트 구현 코드
-|   |-- research_agent.py    # 연구 분석 에이전트
-|   |-- summary_agent.py     # 핵심 기술 요약 에이전트
-|   |-- prediction_agent.py  # 트렌드 예측 에이전트
-|   |-- risk_agent.py        # 리스크 분석 에이전트
-|   |-- report_agent.py      # 보고서 작성 에이전트
+|-- agents/                   # 에이전트 구현 코드
+|   |-- research_agent.py     # 연구 분석 에이전트
+|   |-- summary_agent.py      # 핵심 기술 요약 에이전트
+|   |-- prediction_agent.py   # 트렌드 예측 에이전트
+|   |-- risk_agent.py         # 리스크 분석 에이전트
+|   |-- report_agent.py       # 보고서 작성 에이전트
 |
-|-- prompts/           # 보고서 생성 프롬프트
-|   |-- research_prompt.txt  # 연구 분석 프롬프트
-|   |-- summary_prompt.txt   # 요약 프롬프트
-|   |-- prediction_prompt.txt# 예측 프롬프트
-|   |-- report_prompt.txt    # 보고서 생성 프롬프트
+|-- prompts/                  # 보고서 생성 프롬프트
+|   |-- research_prompt.txt   # 연구 분석 프롬프트
+|   |-- summary_prompt.txt    # 요약 프롬프트
+|   |-- prediction_prompt.txt # 예측 프롬프트
+|   |-- report_prompt.txt     # 보고서 생성 프롬프트
 |
-|-- analysis/          # 데이터 분석 코드
-|   |-- text_analysis.py     # 텍스트 분석 도구
-|   |-- trend_analysis.py    # 트렌드 분석 도구
-|   |-- network_analysis.py  # 네트워크 분석 도구
-|   |-- visualization.py     # 시각화 도구
+|-- analysis/                 # 데이터 분석 코드
+|   |-- text_analysis.py      # 텍스트 분석 도구
+|   |-- trend_analysis.py     # 트렌드 분석 도구
+|   |-- network_analysis.py   # 네트워크 분석 도구
+|   |-- visualization.py      # 시각화 도구
 |
-|-- outputs/           # 분석 결과 및 보고서
-|   |-- figures/       # 생성된 그래프 및 차트
-|   |-- reports/       # 최종 보고서 및 중간 결과물
+|-- outputs/                  # 분석 결과 및 보고서
+|   |-- figures/              # 생성된 그래프 및 차트
+|   |-- reports/              # 최종 보고서 및 중간 결과물
 |
-|-- app.py             # 메인 애플리케이션
-|-- config.py          # 설정 파일
-|-- utils.py           # 유틸리티 함수
-|-- requirements.txt   # 의존성 패키지 목록
-|-- README.md          # 프로젝트 설명서
+|-- app.py                    # 메인 애플리케이션
+|-- config.py                 # 설정 파일
+|-- utils.py                  # 유틸리티 함수
+|-- requirements.txt          # 의존성 패키지 목록
+|-- README.md                 # 프로젝트 설명서
 </pre>
 
 ## Contributors
