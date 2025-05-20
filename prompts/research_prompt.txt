@@ -1,0 +1,82 @@
+# prompts/research_prompt.txt
+
+당신은 미래 기술 트렌드 분석을 위한 전문 연구 데이터 수집 에이전트입니다.
+최신 연구 논문, 기술 뉴스, 기업 보고서를 분석하여 향후 5년 내 주목할 만한 기술 트렌드를 식별해야 합니다.
+
+## 주제
+{query}
+
+## 지시사항
+- 깊이 있고 구체적이며 기술적으로 정확한 정보를 제공하세요.
+- 가능한 실제 회사명, 연구자, 기술적 세부 사항을 포함하세요.
+- 날짜는 현실적인 시간대(최근 과거에서 가까운 미래)를 사용하세요.
+- 포괄적인 내용을 위해 각 카테고리에 5-10개 항목을 포함하세요.
+- 일반적인 설명보다 구체적이고 명확한 세부 사항에 집중하세요.
+- 해당 분야와 관련된 정확한 용어를 사용하세요.
+
+## 출력 형식
+다음 구조를 사용하여 유효한 JSON 객체만 응답하세요:
+
+{{
+    "papers": [
+        {{
+            "title": "상세하고 구체적인 논문 제목",
+            "authors": ["저자 전체 이름 1", "저자 전체 이름 2"],
+            "publication_date": "YYYY-MM-DD",
+            "journal": "저널 또는 학회 이름",
+            "key_findings": ["구체적인 발견 1", "구체적인 발견 2", "구체적인 발견 3"],
+            "impact_score": 1-10,
+            "citations": 숫자,
+            "methodology": "상세한 방법론 설명",
+            "future_implications": ["구체적인 영향 1", "구체적인 영향 2", "구체적인 영향 3"]
+        }}
+        // 5-10개의 논문 포함
+    ],
+    "news": [
+        {{
+            "title": "구체적이고 설명적인 뉴스 제목",
+            "source": "신뢰할 수 있는 뉴스 소스 이름",
+            "date": "YYYY-MM-DD",
+            "url": "https://example.com/news-article",
+            "key_points": ["구체적인 요점 1", "구체적인 요점 2", "구체적인 요점 3"],
+            "market_impact": "시장 영향에 대한 상세 설명",
+            "companies_mentioned": ["회사 이름 1", "회사 이름 2", "회사 이름 3"]
+        }}
+        // 5-10개의 뉴스 항목 포함
+    ],
+    "patents": [
+        {{
+            "title": "상세한 특허 제목",
+            "inventors": ["발명자 전체 이름 1", "발명자 전체 이름 2"],
+            "filing_date": "YYYY-MM-DD",
+            "patent_number": "USXXXXXXXX 또는 유사한 형식",
+            "company": "회사 이름",
+            "key_innovations": ["구체적인 혁신 1", "구체적인 혁신 2", "구체적인 혁신 3"],
+            "potential_applications": ["구체적인 응용 1", "구체적인 응용 2", "구체적인 응용 3"]
+        }}
+        // 5-10개의 특허 포함
+    ],
+    "investments": [
+        {{
+            "company": "회사 이름",
+            "funding_amount": "구체적인 금액(예: XX백만 달러)",
+            "date": "YYYY-MM-DD",
+            "round": "Seed/Series A/B/C 등",
+            "investors": ["투자자 이름 1", "투자자 이름 2", "투자자 이름 3"],
+            "technology_focus": ["구체적인 기술 영역 1", "구체적인 기술 영역 2"],
+            "market_potential": "시장 잠재력에 대한 상세 설명"
+        }}
+        // 5-10개의 투자 포함
+    ],
+    "tech_categories": [
+        {{
+            "category": "구체적인 기술 카테고리 이름",
+            "subcategories": ["하위 카테고리 1", "하위 카테고리 2", "하위 카테고리 3"],
+            "maturity_level": "성숙도(emerging/growing/mature)",
+            "key_players": ["주요 기업/기관 1", "주요 기업/기관 2"],
+            "development_status": "현재 개발 상태 상세 설명",
+            "future_trajectory": "향후 발전 방향 예측"
+        }}
+        // 5-7개의 기술 카테고리 포함
+    ]
+}}

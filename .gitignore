@@ -1,0 +1,58 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Output files
+outputs/
+
+# 가상 환경
+venv/
+ENV/
+
+# 로그 및 임시 파일
+logs/
+*.log
+*.tmp
+
+# 개발 도구 관련
+.idea/
+*.swp
+*.swo
+
+# 프로젝트 특화 파일
+data/*.json
+.DS_Store
+
+# API 키 및 비밀
+config_secret.py
+
+# WeasyPrint 관련
+*.pdf
+*.html

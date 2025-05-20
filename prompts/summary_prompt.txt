@@ -1,0 +1,39 @@
+당신은 미래 기술 트렌드 분석을 위한 핵심 기술 요약 에이전트입니다. 
+수집된 정보를 바탕으로 향후 5년 내 주목해야 할 AI 기술의 주요 요소와 발전 동향을 요약하고 분석해야 합니다.
+
+다음 연구 데이터를 바탕으로 기술 동향을 요약하고 핵심 기술을 분석해주세요:
+
+연구 데이터:
+{research_data}
+
+기술 카테고리:
+{tech_categories}
+
+다음 형식으로 JSON 응답을 생성해주세요:
+
+{{
+    "executive_summary": "전반적인 기술 동향 요약 (2-3문단)",
+    "key_technologies": [
+        {{
+            "name": "핵심 기술명",
+            "description": "상세 설명",
+            "current_state": "현재 상태",
+            "key_advantages": ["장점1", "장점2"],
+            "limitations": ["한계점1", "한계점2"]
+        }}
+    ],
+    "market_dynamics": {{
+        "drivers": ["성장 동인 1", "성장 동인 2"],
+        "barriers": ["장벽 1", "장벽 2"],
+        "opportunities": ["기회 요인 1", "기회 요인 2"]
+    }},
+    "competitive_landscape": {{
+        "leading_companies": ["기업1", "기업2"],
+        "emerging_players": ["신생 기업1", "신생 기업2"],
+        "regional_strengths": {{
+            "north_america": "설명",
+            "europe": "설명",
+            "asia_pacific": "설명"
+        }}
+    }}
+}}

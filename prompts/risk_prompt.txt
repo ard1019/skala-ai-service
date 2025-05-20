@@ -1,0 +1,44 @@
+다음 연구 데이터와 트렌드 예측을 바탕으로 잠재적 위험 요소를 분석해주세요:
+
+연구 데이터:
+{research_data}
+
+트렌드 예측:
+{trend_prediction}
+
+다음 형식으로 JSON 응답을 생성해주세요:
+
+{{
+    "technical_risks": [
+        {{
+            "risk_type": "기술적 위험 유형",
+            "description": "상세 설명",
+            "severity": "높음/중간/낮음",
+            "mitigation_strategies": ["대응 전략1", "대응 전략2"]
+        }}
+    ],
+    "market_risks": [
+        {{
+            "risk_type": "시장 위험 유형",
+            "description": "상세 설명",
+            "severity": "높음/중간/낮음",
+            "mitigation_strategies": ["대응 전략1", "대응 전략2"]
+        }}
+    ],
+    "regulatory_risks": [
+        {{
+            "risk_type": "규제 위험 유형",
+            "description": "상세 설명",
+            "severity": "높음/중간/낮음",
+            "mitigation_strategies": ["대응 전략1", "대응 전략2"]
+        }}
+    ],
+    "societal_impacts": [
+        {{
+            "impact_area": "영향 분야",
+            "potential_effects": ["영향1", "영향2"],
+            "stakeholder_concerns": ["이해관계자 우려1", "이해관계자 우려2"],
+            "recommendations": ["권고사항1", "권고사항2"]
+        }}
+    ]
+}}
