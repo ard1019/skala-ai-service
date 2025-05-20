@@ -86,7 +86,7 @@ skala-ai-service/
 ├── config.py # 설정 파일
 ├── requirements.txt # 의존성 패키지 목록
 └── README.md # 프로젝트 설명서
-</ore>
+</pre>
 
 ## 설치 및 실행
 
